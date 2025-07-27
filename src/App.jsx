@@ -1,13 +1,11 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
-function App() {
+import "./Style.css";
+const App = () => {
   return (
     <>
-      <h1>test for server</h1>
+      <h1>For Chat gpt's viewing test</h1>
+      <div class="logo">ID</div>
     </>
   );
-}
+};
 
 export default App;
