@@ -1,10 +1,11 @@
-import NavbarID from "./components/navbarFL/Navbar";
+import React from "react";
 import "./index.less";
+import Main from "./main/main";
 const App = () => {
   return (
-    <>
-      <NavbarID />
-    </>
+    <React.Fragment>
+      <Main />
+    </React.Fragment>
   );
 };
 

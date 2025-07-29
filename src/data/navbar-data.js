@@ -9,7 +9,7 @@ export const NavbarData = [
   {
     id: 2,
     name: "About",
-    url: "/about",
+    url: "/",
   },
   { id: 3, 
     name: "Skills", 
