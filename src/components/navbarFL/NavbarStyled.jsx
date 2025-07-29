@@ -89,7 +89,7 @@ export const StyledNavLink = styled(NavLink)`
   }
 
   &.active {
-    color: #ffeb3b;
+    color: gold;
   }
 `;
 

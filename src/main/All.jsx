@@ -1,23 +1,24 @@
 import React from "react";
-import AboutID from "../pages/about/About";
-import SkillsID from "../pages/skills/Skills";
-import ProjectsID from "../pages/projects/Projects"
-import AchievementsID from "../pages/achievements/Achievements";
-import ResumeID from "../pages/resume/Resume";
-import ContactID from "../pages/contact/Contact"
 import { Routes, Route } from "react-router-dom";
+import NavbarIDP from "../components/navbarFL/Navbar";
+import AboutIDP from "../pages/about/AboutLS";
+import SkillsIDP from "../pages/skills/SkillsLS";
+import ProjectsIDP from "../pages/projects/ProjectsLS";
+import AchievementsIDP from "../pages/achievements/AchievementsLS";
+import ResumeIDP from "../pages/resume/ResumeLS";
+import ContactIDP from "../pages/contact/ContactLS";
 import NavbarID from "../components/navbarFL/Navbar";
 export default function Main() {
   return (
     <React.Fragment>
       <NavbarID />
       <Routes>
-        <Route path="/" element={<AboutID />} />
-        <Route path="/skills" element={<SkillsID />} />
-        <Route path="/projects" element={<ProjectsID />} />
-        <Route path="/achievements" element={<AchievementsID />} />
-        <Route path="/resume" element={<ResumeID />} />
-        <Route path="/contact" element={<ContactID />} />
+        <Route path="/" element={<AboutIDP />} />
+        <Route path="/skills" element={<SkillsIDP />} />
+        <Route path="/projects" element={<ProjectsIDP />} />
+        <Route path="/achievements" element={<AchievementsIDP />} />
+        <Route path="/resume" element={<ResumeIDP />} />
+        <Route path="/contact" element={<ContactIDP />} />
       </Routes>
     </React.Fragment>
   );

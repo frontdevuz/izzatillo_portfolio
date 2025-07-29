@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Resume() {
+export default function ResumeID() {
   return (
     <div>Resume</div>
   )

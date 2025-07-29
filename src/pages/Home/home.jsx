@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
-export default function Home() {
-  return (
-    <div>Home</div>
-  )
+export default function HomeID() {
+  return <React.Fragment>Home</React.Fragment>;
 }
