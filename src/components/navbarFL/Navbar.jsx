@@ -14,7 +14,7 @@ import {
   MobileMenuOverlay,
   MobileMenu,
   MobileLink,
-} from "./navbar-styled";
+} from "./NavbarStyled";
 import Container from "../container/containerSB";
 
 export default function NavbarID() {
