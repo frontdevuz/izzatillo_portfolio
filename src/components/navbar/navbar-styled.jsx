@@ -16,7 +16,6 @@ export const NavbarBox = styled.header`
 /* ✅ Navbar container */
 export const NavbarContainer = styled.nav`
   max-width: 1400px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +71,7 @@ export const StyledNavLink = styled(NavLink)`
   &:hover {
     color: #ffd6ff;
   }
-
+  
   &::after {
     content: "";
     position: absolute;
@@ -134,7 +133,7 @@ export const Hamburger = styled.div`
   }
 `;
 
-/* ✅ Overlay 
+/* ✅ Overlay */
 export const MobileMenuOverlay = styled.div`
   position: fixed;
   top: 0;

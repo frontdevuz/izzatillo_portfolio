@@ -1,5 +1,5 @@
 import MyLogo from "../assets/media/photos/izzatillo_logo.png"
-export const navbarData = [
+export const NavbarData = [
   {
     id: 1,
     name: "Home",
@@ -13,19 +13,20 @@ export const navbarData = [
   },
   { id: 3, 
     name: "Skills", 
-    url: "/skills" },
+    url: "/skills"
+  ,  },
 
   { id: 4, 
     name: "Projects", 
     url: "/projects" },
   {id:5, 
-    name:"Contact", 
-    url:"/contact"},
+    name:"Achievements", 
+    url:"/achievements"},
   {id:6, 
     name:"Resume", 
     url:"/resume"},
   {id:7,
-    name:"Achievements",
-    url:"/achievements",
+    name:"Contact",
+    url:"/contact",
 }
 ];

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { navbarData } from "../../data/navbar-data";
+import { NavbarData } from "../../data/navbar-data";
 import {
   NavbarBox,
   NavbarContainer,
@@ -17,11 +17,11 @@ import {
 } from "./navbar-styled";
 import Container from "../container/containerSB";
 
-export default function Navbar() {
+export default function NavbarID() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const logoItem = navbarData[0];
-  const menuItems = navbarData.slice(1);
+  const logoItem = NavbarData[0];
+  const menuItems = NavbarData.slice(1);
 
   return (
     <NavbarBox>
