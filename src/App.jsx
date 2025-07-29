@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.less";
-import Main from "./main/main";
+import MainID from "./main/All";
 const App = () => {
   return (
     <React.Fragment>
-      <Main />
+      <MainID />
     </React.Fragment>
   );
 };
