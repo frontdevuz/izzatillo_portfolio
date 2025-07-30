@@ -9,7 +9,7 @@ import {
   NotBoxNumBox,
 } from "./NotfoundST";
 
-export default function Notfound() {
+export default function NotfoundID() {
   return (
     <React.Fragment>
       <NotBox>
