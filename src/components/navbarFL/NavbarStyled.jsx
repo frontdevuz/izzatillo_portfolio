@@ -7,12 +7,14 @@ export const NavbarBox = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #6c63ff, #4f46e5);
+  background: linear-gradient(90deg, rgba(93,84,242,0.95), rgba(79,70,229,0.95));
   padding: 30px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   z-index: 999;
-`;
-
+  `;
+  // background: linear-gradient(90deg, #6c63ff, #4f46e5);  
+  // background: linear-gradient(90deg, rgba(15,11,29,0.9), rgba(30,25,50,0.9));
+  
 /* ✅ Navbar container */
 export const NavbarContainer = styled.nav`
   max-width: 1400px;
