@@ -7,7 +7,7 @@ import AchievementsIDP from "../pages/achievements/AchievementsLS";
 import ResumeIDP from "../pages/resume/ResumeLS";
 import ContactIDP from "../pages/contact/ContactLS";
 import NotfoundIDP from "./error/Notfound";
-import HomeIDP from "../pages/Home/Home";
+import HomeIDP from "../pages/home/HomeLS";
 import LayoutWithNavbarIDP from "../components/navbarFL/LayoutWithNavbar";
 
 export default function Main() {
