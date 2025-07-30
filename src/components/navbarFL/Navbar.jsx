@@ -48,7 +48,7 @@ export default function NavbarID() {
                 <NavbarList key={nav.url}>
                   {nav.name === "Resume" ? (
                     <a
-                      href="/src/assets/media/pdf-folder/Izzatillo's_resume.pdf"
+                      href="/My_resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
@@ -81,7 +81,7 @@ export default function NavbarID() {
             nav.name === "Resume" ? (
               <a
                 key={nav.url}
-                href="/src/assets/media/pdf-folder/Izzatillo's_resume.pdf"
+                href="/My_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
