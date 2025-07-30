@@ -46,7 +46,25 @@ export default function NavbarID() {
             <NavbarListBox>
               {menuItems.map((nav) => (
                 <NavbarList key={nav.url}>
-                  <StyledNavLink to={nav.url}>{nav.name}</StyledNavLink>
+                  {nav.name === "Resume" ? (
+                    <a
+                      href="/src/assets/media/pdf-folder/Izzatillo's_resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: "white",
+                        textDecoration: "none",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "6px",
+                        fontSize: "18px",
+                      }}
+                    >
+                      {nav.name} <i className="fa-solid fa-download"></i>
+                    </a>
+                  ) : (
+                    <StyledNavLink to={nav.url}>{nav.name}</StyledNavLink>
+                  )}
                 </NavbarList>
               ))}
             </NavbarListBox>
@@ -54,13 +72,40 @@ export default function NavbarID() {
         </NavbarContainer>
 
         {/* ✅ Overlay & Mobile Menu */}
-        <MobileMenuOverlay $open={menuOpen} onClick={() => setMenuOpen(false)} />
+        <MobileMenuOverlay
+          $open={menuOpen}
+          onClick={() => setMenuOpen(false)}
+        />
         <MobileMenu $open={menuOpen}>
-          {menuItems.map((nav) => (
-            <MobileLink key={nav.url} to={nav.url} onClick={() => setMenuOpen(false)}>
-              {nav.name}
-            </MobileLink>
-          ))}
+          {menuItems.map((nav) =>
+            nav.name === "Resume" ? (
+              <a
+                key={nav.url}
+                href="/src/assets/media/pdf-folder/Izzatillo's_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                style={{
+                  color: "white",
+                  fontSize: "24px",
+                  textDecoration: "none",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                {nav.name} <i className="fa-solid fa-download"></i>
+              </a>
+            ) : (
+              <MobileLink
+                key={nav.url}
+                to={nav.url}
+                onClick={() => setMenuOpen(false)}
+              >
+                {nav.name}
+              </MobileLink>
+            )
+          )}
         </MobileMenu>
       </Container>
     </NavbarBox>

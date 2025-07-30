@@ -23,10 +23,10 @@ export const NavbarData = [
     name:"Achievements", 
     url:"/achievements"},
   {id:6, 
-    name:"Resume", 
-    url:"/resume"},
+    name:"Contact", 
+    url:"/contact"},
   {id:7,
-    name:"Contact",
-    url:"/contact",
+    name:"Resume",
+    url:"/resume",
 }
 ];
