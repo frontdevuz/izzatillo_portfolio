@@ -7,14 +7,14 @@ export const NavbarBox = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, rgba(93,84,242,0.95), rgba(79,70,229,0.95));
-  padding: 30px 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  padding: 15px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   z-index: 999;
-  `;
-  // background: linear-gradient(90deg, #6c63ff, #4f46e5);  
-  // background: linear-gradient(90deg, rgba(15,11,29,0.9), rgba(30,25,50,0.9));
-  
+`;
+// background: linear-gradient(90deg, #6c63ff, #4f46e5);
+// background: linear-gradient(90deg, rgba(15,11,29,0.9), rgba(30,25,50,0.9));
+
 /* ✅ Navbar container */
 export const NavbarContainer = styled.nav`
   max-width: 1400px;
@@ -26,7 +26,7 @@ export const NavbarContainer = styled.nav`
 /* ✅ Logo */
 export const NavbarLogoBox = styled.div`
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   align-items: center;
 `;
@@ -39,6 +39,9 @@ export const NavbarLogo = styled.img`
 
   &:hover {
     transform: scale(1.08);
+  }
+    &:hover {
+    filter: drop-shadow(0 0 5px #facc15) saturate(200%) brightness(120%);
   }
 `;
 
@@ -98,7 +101,7 @@ export const StyledNavLink = styled(NavLink)`
   &.active {
     color: gold;
   }
-  `;
+`;
 
 /* ✅ Hamburger  */
 export const Hamburger = styled.div`
@@ -192,4 +195,4 @@ export const MobileLink = styled(NavLink)`
   &.active {
     color: #ffd700;
   }
-`;   
+`;

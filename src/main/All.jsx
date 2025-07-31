@@ -9,21 +9,27 @@ import ContactIDP from "../pages/contact/ContactLS";
 import NotfoundIDP from "./error/Notfound";
 import HomeIDP from "../pages/home/HomeLS";
 import LayoutWithNavbarIDP from "../components/navbarFL/LayoutWithNavbar";
+import FooterIDP from "../components/footerML/Footer";
+import ToUpButtonID from "../components/to-up-button/ToUpButton";
 
 export default function Main() {
   return (
-    <Routes>
-      <Route element={<LayoutWithNavbarIDP />}>
-        <Route path="/" element={<HomeIDP />} />
-        <Route path="/about" element={<AboutIDP />} />
-        <Route path="/skills" element={<SkillsIDP />} />
-        <Route path="/projects" element={<ProjectsIDP />} />
-        <Route path="/achievements" element={<AchievementsIDP />} />
-        <Route path="/resume" element={<ResumeIDP />} />
-        <Route path="/contact" element={<ContactIDP />} />
-      </Route>
+    <React.Fragment>
+      <Routes>
+        <Route element={<LayoutWithNavbarIDP />}>
+          <Route path="/" element={<HomeIDP />} />
+          <Route path="/about" element={<AboutIDP />} />
+          <Route path="/skills" element={<SkillsIDP />} />
+          <Route path="/projects" element={<ProjectsIDP />} />
+          <Route path="/achievements" element={<AchievementsIDP />} />
+          <Route path="/resume" element={<ResumeIDP />} />
+          <Route path="/contact" element={<ContactIDP />} />
+        </Route>
 
-      <Route path="*" element={<NotfoundIDP />} />
-    </Routes>
+        <Route path="*" element={<NotfoundIDP />} />
+      </Routes>
+      <ToUpButtonID/>
+      <FooterIDP />
+    </React.Fragment>
   );
 }
