@@ -14,16 +14,15 @@ export const UpButtonBox = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #4f46e5;
+  background: #7861c9;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 
   &:hover {
-    background: #3730a3;
+    background: gold;
     transform: translateY(-5px);
   }
 `;
