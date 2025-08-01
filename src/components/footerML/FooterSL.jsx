@@ -9,6 +9,7 @@ export const FooterBox = styled.footer`
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 0;
+  z-index:10;
 `;
 
 /* ✅ Container to center and wrap content */

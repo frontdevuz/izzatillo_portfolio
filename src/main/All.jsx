@@ -11,10 +11,12 @@ import HomeIDP from "../pages/home/HomeLS";
 import LayoutWithNavbarIDP from "../components/navbarFL/LayoutWithNavbar";
 import FooterIDP from "../components/footerML/Footer";
 import ToUpButtonID from "../components/to-up-button/ToUpButton";
+import BackgroundAnimation from "../components/animated/ImbaBackground";
 
 export default function Main() {
   return (
     <React.Fragment>
+      <BackgroundAnimation />
       <Routes>
         <Route element={<LayoutWithNavbarIDP />}>
           <Route path="/" element={<HomeIDP />} />
@@ -28,7 +30,8 @@ export default function Main() {
 
         <Route path="*" element={<NotfoundIDP />} />
       </Routes>
-      <ToUpButtonID/>
+
+      <ToUpButtonID />
       <FooterIDP />
     </React.Fragment>
   );
