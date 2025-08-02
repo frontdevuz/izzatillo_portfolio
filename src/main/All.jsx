@@ -11,12 +11,18 @@ import HomeIDP from "../pages/home/HomeLS";
 import LayoutWithNavbarIDP from "../components/navbarFL/LayoutWithNavbar";
 import FooterIDP from "../components/footerML/Footer";
 import ToUpButtonID from "../components/to-up-button/ToUpButton";
-import BackgroundAnimation from "../components/animated/ImbaBackground";
+
+/* ✅ Import new components */
+import BackgroundSpace from "../components/animated/BackgroundSpace";
 
 export default function Main() {
   return (
     <React.Fragment>
-      <BackgroundAnimation />
+      {/* 🌌 Space background (stars + meteors) */}
+      <BackgroundSpace />
+
+      
+
       <Routes>
         <Route element={<LayoutWithNavbarIDP />}>
           <Route path="/" element={<HomeIDP />} />
@@ -31,6 +37,7 @@ export default function Main() {
         <Route path="*" element={<NotfoundIDP />} />
       </Routes>
 
+      {/* ✅ UI buttons and footer */}
       <ToUpButtonID />
       <FooterIDP />
     </React.Fragment>
