@@ -1,4 +1,4 @@
-import MYPhoto from "../../public/myAIphoto2.png"
+import MYPhoto from "/for_meta.jpg"
 export const HomeData=[
     {
         id:1,

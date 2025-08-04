@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://izzatillo.uz/sitemap.xml
+Host: izzatillo.uz

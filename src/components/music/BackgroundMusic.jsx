@@ -32,6 +32,8 @@ export default function BackgroundMusic() {
       autoPlay
       loop
       style={{ display: "none" }}
+      preload="none"
+      controls="false"
     >
       <source src="/space_audio.mp3" type="audio/mp3" />
     </MusicPlayer>

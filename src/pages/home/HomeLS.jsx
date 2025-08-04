@@ -5,6 +5,7 @@ import {
   HomeIntro,
   HomeIntroDes,
   HomeJobTitle,
+  HOmeSecLDownBox,
   HomeSecLeft,
   HomeSecLTopBox,
   HomeSecPhoto,
@@ -15,6 +16,7 @@ import {
 } from "./HomeLSTYLE";
 import Container from "../../components/container/containerSB";
 import { HomeData } from "../../data/home-data";
+import { ButtonLK } from "../../components/link/LinkButtonSL";
 export default function HomeID() {
   return (
     <React.Fragment>
@@ -30,6 +32,9 @@ export default function HomeID() {
                     <HomeJobTitle>{home.job}</HomeJobTitle>
                     <HomeIntroDes>{home.description}</HomeIntroDes>
                   </HomeSecLTopBox>
+                  <HOmeSecLDownBox>
+                    <ButtonLK > See more details</ButtonLK>
+                  </HOmeSecLDownBox>
                 </HomeSecLeft>
               );
             })}
@@ -38,6 +43,10 @@ export default function HomeID() {
                 <HomeSecRight>
                   <HomeSecPhotoBox>
                     <HomeSecPhoto
+                      source
+                      srcSet={home.photo}
+                      type="image/webp"
+                      loading="lazy"
                       src={home.photo}
                       alt="This is home page image !!!"
                     />
