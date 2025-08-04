@@ -1,5 +1,6 @@
 import React from "react";
 import LinkButton from "../../components/link/LinkButton";
+import useTyping from "../../hooks/useTyping";
 import {
   HomeContainer,
   HomeIntro,
@@ -17,7 +18,13 @@ import {
 import Container from "../../components/container/containerSB";
 import { HomeData } from "../../data/home-data";
 import { ButtonLK } from "../../components/link/LinkButtonSL";
+
 export default function HomeID() {
+  const typingText = useTyping(
+    ["Frontend Developer ✍️", "Cyber Security Student 🔏", "Tech Explorer 🧐"],
+    150,
+    1000
+  );
   return (
     <React.Fragment>
       <HomeSection>
@@ -29,25 +36,26 @@ export default function HomeID() {
                   <HomeSecLTopBox>
                     <HomeIntro>{home.introduce}</HomeIntro>
                     <HomeTitle>{home.name}</HomeTitle>
-                    <HomeJobTitle>{home.job}</HomeJobTitle>
+
+                    <HomeJobTitle>{typingText}</HomeJobTitle>
+
                     <HomeIntroDes>{home.description}</HomeIntroDes>
                   </HomeSecLTopBox>
+
                   <HOmeSecLDownBox>
-                    <ButtonLK > See more details</ButtonLK>
+                    <ButtonLK>See more details</ButtonLK>
                   </HOmeSecLDownBox>
                 </HomeSecLeft>
               );
             })}
+
             {HomeData.slice(1).map((home) => {
               return (
-                <HomeSecRight>
+                <HomeSecRight key={home.id}>
                   <HomeSecPhotoBox>
                     <HomeSecPhoto
-                      source
-                      srcSet={home.photo}
-                      type="image/webp"
+                      src={home.photo} // ✅ `source` va `type`
                       loading="lazy"
-                      src={home.photo}
                       alt="This is home page image !!!"
                     />
                   </HomeSecPhotoBox>

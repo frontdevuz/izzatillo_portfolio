@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const UpButtonContainer = styled.div`
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 70px;
+  right: 35px;
   z-index: 2000;
   opacity: ${({ show }) => (show ? "1" : "0")};
   pointer-events: ${({ show }) => (show ? "auto" : "none")};
