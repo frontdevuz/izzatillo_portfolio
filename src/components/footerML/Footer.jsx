@@ -36,10 +36,8 @@ export default function FooterLS() {
     <FooterBox>
       <Container>
         <FooterContainer>
-
           {/* ✅ Footer UP */}
           <FooterUpBox>
-
             {/* ✅ 1. First Box – Logo */}
             <FooterFirst>
               <FooterUpFirstBox>
@@ -74,7 +72,9 @@ export default function FooterLS() {
             {/* ✅ 2. Quick Links */}
             <FooterSecond>
               <FooterUpSecondBox>
-                <FooterUpSecondBLinksTitle>Quick Links</FooterUpSecondBLinksTitle>
+                <FooterUpSecondBLinksTitle>
+                  Quick Links
+                </FooterUpSecondBLinksTitle>
                 <FooterUpSecondBLinksBox>
                   {quickLinks.map((link) => (
                     <FooterUpSecondBLinksList key={link.id}>
@@ -141,14 +141,14 @@ export default function FooterLS() {
                 </FooterUpThirdContactContentBox>
               </FooterUpThirdBox>
             </FooterThird>
-
           </FooterUpBox>
 
           {/* ✅ Footer DOWN */}
           <FooterDownContainer>
-            <FooterDownContainerTitle>{info.copyright}</FooterDownContainerTitle>
+            <FooterDownContainerTitle>
+              {info.copyright}
+            </FooterDownContainerTitle>
           </FooterDownContainer>
-
         </FooterContainer>
       </Container>
     </FooterBox>

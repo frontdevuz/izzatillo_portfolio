@@ -1,11 +1,10 @@
 import React from "react";
+import LinkButton from "../../components/link/LinkButton";
 
 export default function HomeID() {
   return (
     <React.Fragment>
-      <p style={{ color: "white", zIndex:"6"}}>
-        
-      </p>
+
     </React.Fragment>
   );
 }

@@ -40,14 +40,14 @@ export const NavbarLogo = styled.img`
   &:hover {
     transform: scale(1.08);
   }
-    &:hover {
+  &:hover {
     filter: drop-shadow(0 0 5px #facc15) saturate(200%) brightness(120%);
   }
 `;
 
 /* ✅ Desktop Menu */
 export const NavbarContentBox = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 870px) {
     display: none;
   }
 `;
@@ -69,7 +69,7 @@ export const StyledNavLink = styled(NavLink)`
   color: white;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   transition: color 0.3s ease;
 
   &:hover {
@@ -112,7 +112,7 @@ export const Hamburger = styled.div`
   cursor: pointer;
   z-index: 1001;
 
-  @media (max-width: 768px) {
+  @media (max-width: 870px) {
     display: block;
   }
 
@@ -165,7 +165,7 @@ export const MobileMenu = styled.div`
   right: 0;
   width: 70%;
   height: 100%;
-  background: linear-gradient(180deg, #6c63ff, #4f46e5);
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   display: flex;
   flex-direction: column;
   justify-content: center;

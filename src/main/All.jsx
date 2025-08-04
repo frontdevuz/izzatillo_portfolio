@@ -14,15 +14,14 @@ import ToUpButtonID from "../components/to-up-button/ToUpButton";
 
 /* ✅ Import new components */
 import BackgroundSpace from "../components/animated/BackgroundSpace";
+import BackgroundMusic from "../components/music/BackgroundMusic";
 
 export default function Main() {
   return (
     <React.Fragment>
       {/* 🌌 Space background (stars + meteors) */}
       <BackgroundSpace />
-
-      
-
+      <BackgroundMusic />
       <Routes>
         <Route element={<LayoutWithNavbarIDP />}>
           <Route path="/" element={<HomeIDP />} />
