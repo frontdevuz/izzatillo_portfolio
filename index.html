@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ Basic Meta -->
     <meta name="author" content="Izzatillo Davlatov" />
-    <meta
-      name="description"
-      content="Hi, I'm Izzatillo, a front-end developer from Uzbekistan. Explore my projects, skills, and creative experiments in web development."
-    />
-    <meta
-      name="keywords"
-      content="Izzatillo, Davlatov, izzatillo, cyber security, izzatillo uz, izzatillo davlatov ,izzatillo.uz, web developer, frontend developer, React, JavaScript, portfolio, UI/UX, cyber security"
-    />
+    <meta name="description" content="Izzatillo – Frontend Developer from Uzbekistan. Explore my web projects, skills, and creative experiments in React & modern web development." />
+    <meta name="keywords" content="Izzatillo, Davlatov, izzatillo, izzatillo uz, izzatillo davlatov, izzatillo.uz, web developer, frontend developer, React, JavaScript, UI/UX, portfolio" />
     <meta name="theme-color" content="#0d1117" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Language" content="en" />
@@ -21,88 +17,61 @@
     <link rel="alternate" hreflang="en" href="https://izzatillo.uz/" />
 
     <!-- ✅ Favicon -->
-    <link
-      rel="icon"
-      href="/src/assets/media/photos/izzatillo_logo.png"
-      type="image/png"
-    />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+
+    <!-- ✅ Preload Hero Image (LCP) -->
+    <link rel="preload" as="image" href="/for_meta.jpg" />
 
     <!-- ✅ Fonts (optimized) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
     <!-- ✅ Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-+W8+UzL7NBo2M94XBG8R2R7Vv1Jq9GZaRyYPSxP4CzSjqh1R7x7v2RSh9bfWlM5UeSmk5U0tbt4LSh2pYV5j5g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-+W8+UzL7NBo2M94XBG8R2R7Vv1Jq9GZaRyYPSxP4CzSjqh1R7x7v2RSh9bfWlM5UeSmk5U0tbt4LSh2pYV5j5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- ✅ Open Graph -->
-    <meta property="og:title" content="Izzatillo – Personal Portfolio" />
-    <meta
-      property="og:description"
-      content="Explore my web development projects, skills, and creative experiments."
-    />
+    <meta property="og:title" content="Izzatillo – Frontend Developer Portfolio" />
+    <meta property="og:description" content="Explore my web development projects, skills, and creative experiments." />
     <meta property="og:image" content="https://izzatillo.uz/for_meta.jpg" />
     <meta property="og:url" content="https://izzatillo.uz" />
     <meta property="og:type" content="website" />
 
     <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Izzatillo – Personal Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Frontend developer from Uzbekistan – check out my projects and skills."
-    />
+    <meta name="twitter:title" content="Izzatillo – Frontend Developer" />
+    <meta name="twitter:description" content="Frontend developer from Uzbekistan – check out my projects and skills." />
     <meta name="twitter:image" content="https://izzatillo.uz/for_meta.jpg" />
 
     <!-- ✅ Manifest -->
     <link rel="manifest" href="/manifest.json" />
 
-    <title>Izzatillo – Frontend Developer Portfolio</title>
+    <title>Izzatillo – Web Developer | Portfolio & Projects</title>
 
-    <!-- ✅ Structured Data (Google SEO & site links) -->
+    <!-- ✅ Structured Data (Person + Website) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Izzatillo Portfolio",
-        "url": "https://izzatillo.uz",
-        "description": "Frontend developer from Uzbekistan – Explore my portfolio, skills, and web projects.",
-        "sameAs": [
-          "https://github.com/izzatillo",
-          "https://linkedin.com/in/izzatillo"
-        ],
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://izzatillo.uz/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Izzatillo Davlatov",
+      "url": "https://izzatillo.uz",
+      "image": "https://izzatillo.uz/for_meta.jpg",
+      "jobTitle": "Frontend Developer",
+      "sameAs": [
+        "https://github.com/frontdevuz",
+        "https://instagram.com/davlatovizzatillo7"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance Developer"
       }
+    }
     </script>
-  </head>
 
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

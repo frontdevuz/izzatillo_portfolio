@@ -15,6 +15,7 @@ import ToUpButtonID from "../components/to-up-button/ToUpButton";
 /* ✅ Import new components */
 import BackgroundSpace from "../components/animated/BackgroundSpace";
 import BackgroundMusic from "../components/music/BackgroundMusic";
+import SEOUpdater from "../components/ceo/SeoUpdater";
 
 export default function Main() {
   return (
@@ -22,6 +23,7 @@ export default function Main() {
       {/* 🌌 Space background (stars + meteors) */}
       <BackgroundSpace />
       <BackgroundMusic />
+      <SEOUpdater />
       <Routes>
         <Route element={<LayoutWithNavbarIDP />}>
           <Route path="/" element={<HomeIDP />} />
