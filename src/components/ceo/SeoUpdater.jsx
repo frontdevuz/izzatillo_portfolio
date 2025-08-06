@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import setSEO from "../utils/setSEO";
+import setSEO from "../../utils/setSEO";
 
 export default function SEOUpdater() {
   const { pathname } = useLocation();
