@@ -43,7 +43,7 @@ export default function HomeID() {
                   </HomeSecLTopBox>
 
                   <HOmeSecLDownBox>
-                    <ButtonLK>See more details</ButtonLK>
+                    <ButtonLK to={"/about"}>See more details</ButtonLK>
                   </HOmeSecLDownBox>
                 </HomeSecLeft>
               );

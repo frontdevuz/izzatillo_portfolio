@@ -6,34 +6,33 @@ export default function BackgroundMusic() {
 
   useEffect(() => {
     const audio = audioRef.current;
+    if (!audio) return;
 
-    if (audio) {
-      audio.muted = true; 
-      audio.play().catch(() => {
-        console.log
-      });
-    }
-
-    const enableSound = () => {
-      if (audio && audio.muted) {
+    const playMusic = () => {
+      if (audio.paused) {
         audio.muted = false;
-        audio.play();
+        audio.play().catch((err) => console.log("Audio play error:", err));
       }
-      document.removeEventListener("click", enableSound);
+      removeListeners();
     };
 
-    document.addEventListener("click", enableSound);
-    return () => document.removeEventListener("click", enableSound);
+    const removeListeners = () => {
+      document.removeEventListener("click", playMusic);
+      document.removeEventListener("scroll", playMusic);
+    };
+
+    document.addEventListener("click", playMusic, { once: true });
+    document.addEventListener("scroll", playMusic, { once: true });
+
+    return removeListeners;
   }, []);
 
   return (
     <MusicPlayer
       ref={audioRef}
-      autoPlay
+      preload="auto"
       loop
       style={{ display: "none" }}
-      preload="none"
-      controls={false}
     >
       <source src="/space_audio.mp3" type="audio/mp3" />
     </MusicPlayer>
