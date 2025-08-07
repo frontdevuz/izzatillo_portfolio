@@ -17,7 +17,6 @@ import {
 } from "./HomeLSTYLE";
 import Container from "../../components/container/containerSB";
 import { HomeData } from "../../data/home-data";
-import { ButtonLK } from "../../components/link/LinkButtonSL";
 
 export default function HomeID() {
   const typingText = useTyping(
@@ -43,7 +42,7 @@ export default function HomeID() {
                   </HomeSecLTopBox>
 
                   <HOmeSecLDownBox>
-                    <ButtonLK to={"/about"}>See more details</ButtonLK>
+                    <LinkButton to={"/about"}>See more details</LinkButton>
                   </HOmeSecLDownBox>
                 </HomeSecLeft>
               );
