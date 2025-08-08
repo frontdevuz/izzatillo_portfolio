@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import AboutIDP from "../pages/about/AboutLS";
 import SkillsIDP from "../pages/skills/SkillsLS";
@@ -12,15 +12,25 @@ import LayoutWithNavbarIDP from "../components/navbarFL/LayoutWithNavbar";
 import FooterIDP from "../components/footerML/Footer";
 import ToUpButtonID from "../components/to-up-button/ToUpButton";
 
-/* ✅ Import new components */
 import BackgroundSpace from "../components/animated/BackgroundSpace";
 import BackgroundMusic from "../components/music/BackgroundMusic";
 import SEOUpdater from "../components/ceo/SeoUpdater";
 
+// ✅ AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Main() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <React.Fragment>
-      {/* 🌌 Space background (stars + meteors) */}
       <BackgroundSpace />
       <BackgroundMusic />
       <SEOUpdater />
@@ -34,11 +44,8 @@ export default function Main() {
           <Route path="/resume" element={<ResumeIDP />} />
           <Route path="/contact" element={<ContactIDP />} />
         </Route>
-
         <Route path="*" element={<NotfoundIDP />} />
       </Routes>
-
-      {/* ✅ UI buttons and footer */}
       <ToUpButtonID />
       <FooterIDP />
     </React.Fragment>

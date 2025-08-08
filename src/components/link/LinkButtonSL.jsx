@@ -3,9 +3,10 @@ import { NavLink } from "react-router-dom";
 
 export const ButtonLK = styled(NavLink)`
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
-  font-size: 18px;
+  width:200px;
+  text-align:center;
+  padding:0.7rem 0;
+  font-size: 17px;
   font-family: Raleway;
   color: white;
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);

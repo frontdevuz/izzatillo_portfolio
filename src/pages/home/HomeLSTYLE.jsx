@@ -32,8 +32,10 @@ export const HomeSecLeft = styled.div`
   flex-wrap: wrap;
   padding: 2rem 0;
 
-  @media (max-width: 768px) {
-    width: 90%;
+  @media (max-width: 800px) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 `;
 
@@ -63,16 +65,16 @@ export const HomeTitle = styled.h1`
 `;
 
 export const HomeJobTitle = styled.p`
+font-family:cursive;
+
+  font-size: 18px;
+  font-weight: 500;
   color: gold;
-  font-family: Raleway;
-  font-size: 16px;
-  letter-spacing: 1px;
-    &::after {
-    content: "|";
-    position: absolute;
-    animation: blink 0.7s infinite;
-    margin-left: 3px;
-  }
+  margin-top: 10px;
+  min-height: 36px; 
+  transition: all 0.3s ease-in-out;
+
+
 
   @keyframes blink {
     50% {
@@ -88,9 +90,9 @@ export const HomeIntroDes = styled.p`
 `;
 
 export const HomeButton = styled.a`
-  display: inline-block;
+  display: block;
+  width: 350px !important;
   margin-top: 20px;
-  padding: 12px 28px;
   font-size: 18px;
   font-family: Raleway;
   color: white;
@@ -137,7 +139,35 @@ export const HomeButton = styled.a`
   }
 `;
 
-export const HOmeSecLDownBox = styled.div``;
+export const HOmeSecLDownBox = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+  }
+`;
+export const IconsBox = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-left: 12px;
+  margin-bottom: 30px;
+  @media (max-width: 800px) {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+`;
 
 export const HomeSecRight = styled.div`
   width: 40%;
@@ -146,9 +176,9 @@ export const HomeSecRight = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) {
-    width: 90%;
-    margin-top: 30px;
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-top:35px;
   }
 `;
 
@@ -168,7 +198,7 @@ export const HomeSecPhoto = styled.img`
   cursor: grab;
 
   &:hover {
-    transform: scale(1.05) rotate(1deg);
+    transform: scale(1.05) rotate(-5deg);
     box-shadow: 0 0 20px white;
   }
 `;

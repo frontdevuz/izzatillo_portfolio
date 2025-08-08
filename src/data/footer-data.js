@@ -25,9 +25,9 @@ export const FooterData = {
   },
 
   socials: [
-    { id: 1, icon: "fa-brands fa-telegram ", url: "https://t.me/izzatillod", unique:"telegram", color:"#0088cc" },
-    { id: 2, icon: "fa-brands fa-instagram ", url: "https://www.instagram.com/davlatovizzatillo7/" , unique:"instagram",color:"#E1306C" },
-    { id: 3, icon: "fa-brands fa-github ", url: "https://github.com/frontdevuz" , unique:"github", color:"#181717"},
-    { id: 4, icon: "fa-brands fa-facebook ", url: "https://www.facebook.com/profile.php?id=100068075402404", unique:"facebook", color:"#1877F2" }
+    { id: 1, icon: "fa-brands fa-telegram fa-beat", url: "https://t.me/izzatillod", unique:"telegram", color:"#0088cc" },
+    { id: 2, icon: "fa-brands fa-instagram fa-beat", url: "https://www.instagram.com/davlatovizzatillo7/" , unique:"instagram",color:"#E1306C" },
+    { id: 3, icon: "fa-brands fa-github fa-beat", url: "https://github.com/frontdevuz" , unique:"github", color:"#181717"},
+    { id: 4, icon: "fa-brands fa-facebook fa-beat", url: "https://www.facebook.com/profile.php?id=100068075402404", unique:"facebook", color:"#1877F2" }
   ]
 };
