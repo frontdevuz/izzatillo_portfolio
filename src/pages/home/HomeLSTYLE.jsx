@@ -65,10 +65,9 @@ export const HomeTitle = styled.h1`
 `;
 
 export const HomeJobTitle = styled.p`
-font-family:cursive;
-
-  font-size: 18px;
-  font-weight: 500;
+  font-family:Raleway;
+  font-size: 19px;
+  font-weight: 400;
   color: gold;
   margin-top: 10px;
   min-height: 36px; 

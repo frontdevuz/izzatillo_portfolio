@@ -8,6 +8,7 @@ const BackgroundWrapper = styled.div`
   inset: 0;
   z-index: -1;
   background: black;
+  min-height:100%;
 `;
 
 /* 🌌 Twinkling Stars */
@@ -82,7 +83,6 @@ function Meteors({ count = 25 }) {
       const d = meteors[i];
       d.pos.z += d.speed;
 
-      // Meteorlar sekin-asta aylansin
       m.rotation.x += d.rot.x;
       m.rotation.y += d.rot.y;
       m.rotation.z += d.rot.z;

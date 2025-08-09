@@ -21,6 +21,7 @@ import { FooterData } from "../../data/footer-data";
 import Container from "../../components/container/containerSB";
 import { HomeData } from "../../data/home-data";
 import { FooterDownFBox } from "../../components/footerML/FooterSL";
+
 export default function HomeID() {
   const { socials } = FooterData;
   const typingText = useTyping(
@@ -38,40 +39,49 @@ export default function HomeID() {
               return (
                 <HomeSecLeft
                   key={home.id}
-                  data-aos="fade-in-up"
-                  data-aos-delay="0"
-                  data-aos-duration="700"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-offset="120"
                 >
                   <HomeSecLTopBox>
                     <HomeIntro
                       data-aos="flip-down"
-                      data-aos-delay="100"
-                      data-aos-duration="600"
+                      data-aos-delay="150"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out-back"
                     >
                       {home.introduce}
                     </HomeIntro>
 
                     <HomeTitle
                       data-aos="zoom-in"
-                      data-aos-delay="200"
-                      data-aos-duration="700"
+                      data-aos-delay="300"
+                      data-aos-duration="1200"
+                      data-aos-easing="ease-out-back"
                     >
                       {home.name}
                     </HomeTitle>
 
                     <HomeJobTitle
-                      style={{ minHeight: "48px", transition: "all 0.3s ease" }}
+                      style={{
+                        minHeight: "48px",
+                        transition: "all 0.3s ease",
+                      }}
                       data-aos="fade-left"
-                      data-aos-delay="300"
-                      data-aos-duration="600"
+                      data-aos-delay="500"
+                      data-aos-duration="1200"
+                      data-aos-easing="ease-out-cubic"
                     >
                       {typingText}
                     </HomeJobTitle>
 
                     <HomeIntroDes
                       data-aos="fade-up"
-                      data-aos-delay="400"
-                      data-aos-duration="700"
+                      data-aos-delay="600"
+                      data-aos-duration="1300"
+                      data-aos-easing="ease-in-out"
                     >
                       {home.description}
                     </HomeIntroDes>
@@ -79,8 +89,9 @@ export default function HomeID() {
 
                   <HOmeSecLDownBox
                     data-aos="zoom-in-up"
-                    data-aos-delay="400"
-                    data-aos-duration="500"
+                    data-aos-delay="700"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-out-back"
                   >
                     <FooterDownFBox>
                       <IconsBox>
@@ -90,13 +101,25 @@ export default function HomeID() {
                             href={s.url}
                             target="_blank"
                             rel="noopener noreferrer"
+                            data-aos="fade-up"
+                            data-aos-delay="800"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-out-cubic"
                           >
                             <i className={s.icon}></i>
                           </SocialIcon>
                         ))}
                       </IconsBox>
                     </FooterDownFBox>
-                    <LinkButton to={"/about"}>See more details</LinkButton>
+                    <LinkButton
+                      to={"/about"}
+                      data-aos="fade-up"
+                      data-aos-delay="900"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-out-cubic"
+                    >
+                      See more details
+                    </LinkButton>
                   </HOmeSecLDownBox>
                 </HomeSecLeft>
               );
@@ -106,14 +129,17 @@ export default function HomeID() {
               return (
                 <HomeSecRight
                   key={home.id}
-                  data-aos="fade-in-up"
+                  data-aos="fade-up"
                   data-aos-delay="300"
-                  data-aos-duration="800"
+                  data-aos-duration="1200"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-offset="120"
                 >
                   <HomeSecPhotoBox
                     data-aos="zoom-in"
-                    data-aos-delay="400"
-                    data-aos-duration="700"
+                    data-aos-delay="500"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-out-back"
                   >
                     <HomeSecPhoto
                       src={home.photo}
